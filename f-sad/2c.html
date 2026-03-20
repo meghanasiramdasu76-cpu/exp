@@ -1,0 +1,61 @@
+!DOCTYPE html>
+<html>
+<head><title>Registration Form</title></head>
+<body>
+    <h2>User Registration</h2>
+    <form action="#">
+        <table border="0">
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="g" value="m"> Male
+                    <input type="radio" name="g" value="f"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox"> Reading 
+                    <input type="checkbox"> Coding
+                </td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>
+                    <select name="city">
+                        <option>New York</option>
+                        <option>London</option>
+                        <option>Tokyo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Comments:</td>
+                <td><textarea rows="4" cols="20"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

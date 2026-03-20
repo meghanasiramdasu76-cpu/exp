@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* ---------------- SIMPLE SELECTORS ---------------- */
+
+        /* Element selector */
+        p {
+            color: blue;
+        }
+
+        /* ID selector */
+        #mainHeading {
+            color: red;
+        }
+
+        /* Class selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* Group selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* Universal selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* ---------------- COMBINATOR SELECTORS ---------------- */
+
+        /* Descendant selector */
+        div p {
+            color: purple;
+        }
+
+        /* Child selector */
+        div > h4 {
+            color: orange;
+        }
+
+        /* Adjacent sibling selector */
+        h5 + p {
+            color: brown;
+        }
+
+        /* General sibling selector */
+        h6 ~ p {
+            color: pink;
+        }
+
+        /* ---------------- PSEUDO-CLASS ---------------- */
+
+        a:hover {
+            color: red;
+        }
+
+        li:first-child {
+            color: teal;
+        }
+
+        /* ---------------- PSEUDO-ELEMENT ---------------- */
+
+        p::first-letter {
+            font-size: 20px;
+            color: black;
+        }
+
+        p::after {
+            content: " ✔";
+        }
+
+        /* ---------------- ATTRIBUTE SELECTOR ---------------- */
+
+        input[type="text"] {
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<h1 id="mainHeading">CSS Selector Forms</h1>
+
+<h2>Group Selector</h2>
+<h3>Also Group Selector</h3>
+
+<p>This is a normal paragraph</p>
+
+<p class="highlight">This is class selector</p>
+
+<div>
+    <p>Descendant selector example</p>
+    <h4>Child selector example</h4>
+</div>
+
+<h5>Adjacent sibling</h5>
+<p>This paragraph is affected</p>
+
+<h6>General sibling</h6>
+<p>Sibling 1</p>
+<p>Sibling 2</p>
+
+<ul>
+    <li>First item</li>
+    <li>Second item</li>
+</ul>
+
+<a href="#">Hover over me</a>
+
+<br><br>
+
+<input type="text" placeholder="Attribute selector">
+
+</body>
+</html>
