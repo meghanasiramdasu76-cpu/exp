@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Demo</title>
+
+    <style>
+        /* ========================= */
+        /* SIMPLE SELECTORS */
+        /* ========================= */
+
+        /* Element selector */
+        p {
+            color: blue;
+        }
+
+        /* ID selector */
+        #mainTitle {
+            color: darkred;
+            text-align: center;
+        }
+
+        /* Class selector */
+        .box {
+            border: 2px solid green;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        /* Group selector */
+        h2, h3, h4 {
+            color: purple;
+        }
+
+        /* Universal selector */
+        * {
+            font-family: Arial;
+        }
+
+        /* ========================= */
+        /* COMBINATORY SELECTORS */
+        /* ========================= */
+
+        /* Descendant selector */
+        div p {
+            background-color: #e6f2ff;
+        }
+
+        /* Child selector */
+        div > span {
+            color: red;
+            font-weight: bold;
+        }
+
+        /* Adjacent sibling selector */
+        h2 + p {
+            color: orange;
+        }
+
+        /* General sibling selector */
+        h3 ~ p {
+            color: brown;
+        }
+
+        /* ========================= */
+        /* PSEUDO-CLASS SELECTORS */
+        /* ========================= */
+
+        a:hover {
+            color: red;
+            font-size: 18px;
+        }
+
+        input:focus {
+            background-color: lightyellow;
+        }
+
+        li:first-child {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* ========================= */
+        /* PSEUDO-ELEMENT SELECTORS */
+        /* ========================= */
+
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p::after {
+            content: " ✔";
+            color: green;
+        }
+
+        /* ========================= */
+        /* ATTRIBUTE SELECTORS */
+        /* ========================= */
+
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        input[type="password"] {
+            border: 2px solid red;
+        }
+
+        a[target="_blank"] {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="mainTitle">CSS Selector Types Demo</h1>
+
+    <h2>Simple Selectors</h2>
+    <p>This is element selector example</p>
+
+    <div class="box">This is class selector example</div>
+
+    <h3>Group Selector Example</h3>
+    <h4>Group Selector Applied</h4>
+
+    <hr>
+
+    <h2>Combinatory Selectors</h2>
+
+    <div>
+        <p>Descendant selector example</p>
+        <span>Child selector example</span>
+    </div>
+
+    <h2>Adjacent Sibling</h2>
+    <p>This paragraph is styled by adjacent sibling selector</p>
+
+    <h3>General Sibling</h3>
+    <p>General sibling example 1</p>
+    <p>General sibling example 2</p>
+
+    <hr>
+
+    <h2>Pseudo-Class Selectors</h2>
+    <a href="#">Hover over this link</a><br><br>
+
+    <input type="text" placeholder="Focus me"><br><br>
+
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+    </ul>
+
+    <hr>
+
+    <h2>Pseudo-Element Selectors</h2>
+    <p>This is pseudo-element example paragraph.</p>
+
+    <hr>
+
+    <h2>Attribute Selectors</h2>
+
+    <input type="text" placeholder="Text input"><br><br>
+    <input type="password" placeholder="Password input"><br><br>
+
+    <a href="https://google.com" target="_blank">Google Link</a>
+
+</body>
+</html>

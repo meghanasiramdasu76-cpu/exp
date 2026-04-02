@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Background Image Example</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 2000px; /* Added height to enable scrolling */
+
+            background-image: url("background.jpg");
+            background-repeat: repeat-x;      /* Tile horizontally */
+            background-position: center 50%;  /* Halfway down the page */
+            background-attachment: fixed;     /* Stay fixed on scroll */
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Background Image Demonstration</h1>
+    <p style="text-align:center;">
+        Scroll down to see that the background image remains fixed.
+    </p>
+
+</body>
+</html>
